@@ -32,8 +32,9 @@ img:hover {
 /* Центрование картинок */
 img.center {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 400px;
 }
 
 h1,
@@ -54,7 +55,7 @@ p {
   font-weight: inherit;
   font-size: inherit;
   font-family: cursive;
-  color: #87a9c3;
+  color: #afaeae;
   font-size: 150%;
 }
 
@@ -62,10 +63,13 @@ p {
   text-align: center;
   /* padding-left: 50px;
   padding-right: 50px; */
+  font-family: cursive;
 }
 
 .heading {
   margin-bottom: 3%;
+  font-family: cursive;
+  color: #dcd2d2;
 }
 
 html,
@@ -85,12 +89,7 @@ body {
 }
 
 .container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.container {
-  width: 90vw; /* ширина будет равна 90% от ширины экрана */
+  margin: 0 auto;
 }
 
 .item {
@@ -152,7 +151,7 @@ body {
 
 .image-slider .swiper-button-prev::after,
 .image-slider .swiper-button-next::after {
-  color: #ffffff;
+  color: #000000;
   /* display: flex; */
   /* align-items: center; */
 }
@@ -192,30 +191,60 @@ h1 {
   font-size: 48px;
 }
 
-/* Для планшетов и мобильных телефонов убираем фон картинки у блока top */
-@media (max-width: 992px) {
-  .top {
-    background-image: none;
+@media only screen and (max-width: 1200px) {
+  .title {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 992px) {
+}
+@media only screen and (max-width: 768px) {
+}
+@media (max-width: 480px) and (max-height: 935px) {
+  .title {
+    font-size: 30px;
+    text-align: center;
+    margin-left: 30px;
+    font-family: cursive;
+  }
+
+  .img {
+    width: 20;
+    height: 40;
+  }
+
+  .wrapper {
+    max-width: 400px;
+    height: 1px;
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 15px;
+    margin-left: 10px;
+    margin-right: 150px;
+    margin-bottom: 300px;
+  }
+  .container {
+    width: 300px;
+  }
+
+  body {
+    width: 90px;
+  }
+
+  .Congratulation {
+    text-align: center;
+    font-size: 15px;
+    font-family: cursive;
+  }
+
+  .heading {
+    margin-right: 10px;
+    font-family: cursive;
+    /* text-align: center; */
   }
 }
 
-.leftcolumn {
-  width: 27%; /* 270px / 1000px = 0,27 */
-  float: left;
-}
-
-.rightcolumn {
-  width: 73%; /* 730px / 1000px = 0,73 */
-  float: right;
-}
-
-@media (max-width: 768px) {
-  header,
-  nav,
-  main,
-  body,
-  p,
-  div {
-    padding: 10px;
-  }
+@media only screen and (max-width: 320px) {
 }
