@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=960px, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Подключаем Swiper для css -->
     <link
       rel="stylesheet"
@@ -54,103 +54,35 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="wrapper">
-      <h1 class="title col-lg-4 col-md-6 mb-3">
-        <strong>✨С днём рождения!!!✨</strong>
-      </h1>
-      <!-- Слайдер -->
-      <!-- Флекс-контейнер -->
-      <div class="image-slider swiper-container col-lg-4 col-md-6 mb-3">
-        <!-- Флекс-элимент -->
-        <div
-          class="image-slider__wrapper swiper-wrapper col-lg-4 col-md-6 mb-3"
-        >
-          <!-- Слайд 1 -->
-          <!-- Хеш навигация -->
-          <div
-            data-hash="slide-1"
-            class="image-slider__slide swiper-slide col-lg-4 col-md-6 mb-3"
-          >
-            <div
-              class="image-slider__image swiper-zoom-container col-lg-4 col-md-6 mb-3"
-            >
-              <img
-                src="01.png"
-                alt="Photo"
-                class="center swiper-lazy col-lg-4 col-md-6 mb-3"
-                id="image"
-              />
-              <!-- <div class="swiper-lazy-preloader"></div> -->
+    <h1 class="title">
+      <strong>✨С днём рождения!!!✨</strong>
+    </h1>
+    <div class="img__container">
+      <div class="image-slider swiper">
+        <div class="swiper-wrapper">
+          <div data-hash="slide-1" class="swiper-slide">
+            <div class="gallery_link">
+              <img src="01.png" alt="Photo" class="image" />
             </div>
           </div>
-          <!-- Слайд 2 -->
-          <!-- Хеш навигация -->
-          <div
-            data-hash="slide-2"
-            class="image-slider__slide swiper-slide col-lg-4 col-md-6 mb-3"
-          >
-            <div
-              class="image-slider__image swiper-zoom-container col-lg-4 col-md-6 mb-3"
-            >
-              <img
-                src="02.png"
-                alt="Photo"
-                class="center swiper-lazy col-lg-4 col-md-6 mb-3"
-                id="image"
-              />
-              <!-- <div class="swiper-lazy-preloader"></div> -->
+          <div data-hash="slide-2" class="swiper-slide">
+            <div class="gallery_link">
+              <img src="02.png" alt="Photo" class="image" />
             </div>
           </div>
-          <!-- Слайд 3 -->
-          <!-- Хеш навигация -->
-          <div
-            data-hash="slide-3"
-            class="image-slider__slide swiper-slide col-lg-4 col-md-6 mb-3"
-          >
-            <div
-              class="image-slider__image swiper-zoom-container col-lg-4 col-md-6 mb-3"
-            >
-              <img
-                src="03.png"
-                alt="Photo"
-                class="center swiper-lazy col-lg-4 col-md-6 mb-3"
-                id="image"
-              />
-              <!-- <div class="swiper-lazy-preloader"></div> -->
+          <div data-hash="slide-3" class="swiper-slide">
+            <div class="gallery_link">
+              <img src="03.png" alt="Photo" class="image" />
             </div>
           </div>
-          <!-- Слайд 4 -->
-          <!-- Хеш навигация -->
-          <div
-            data-hash="slide-4"
-            class="image-slider__slide swiper-slide col-lg-4 col-md-6 mb-3"
-          >
-            <div
-              class="image-slider__image swiper-zoom-container col-lg-4 col-md-6 mb-3"
-            >
-              <img
-                src="04.png"
-                alt="Photo"
-                class="center swiper-lazy col-lg-4 col-md-6 mb-3"
-                id="image"
-              />
-              <!-- <div class="swiper-lazy-preloader"></div> -->
+          <div data-hash="slide-4" class="swiper-slide">
+            <div class="gallery_link">
+              <img src="04.png" alt="Photo" class="image" />
             </div>
           </div>
-          <div
-            data-hash="slide-5"
-            class="image-slider__slide swiper-slide col-lg-4 col-md-6 mb-3"
-          >
-            <div
-              class="image-slider__image swiper-zoom-container col-lg-4 col-md-6 mb-3"
-            >
-              <img
-                src="05.png"
-                alt="Photo"
-                class="center swiper-lazy col-lg-4 col-md-6 mb-3"
-                id="image"
-              />
-              <!-- <div class="swiper-lazy-preloader"></div> -->
+          <div data-hash="slide-5" class="swiper-slide">
+            <div class="gallery_link">
+              <img src="05.png" alt="Photo" class="image" />
             </div>
           </div>
         </div>
@@ -158,48 +90,40 @@
 
       <!-- Текстовый сдайдер -->
       <!-- <div class="text">🎊С днём рождения мама!!!🎊 Мы тебя любим!!!😘</div> -->
-      <div class="Congratulation col-lg-4 col-md-6 mb-3">
-        <h2 class="heading col-lg-4 col-md-6 mb-3">Поздравление 📋</h2>
-        <p class="col-lg-4 col-md-6 mb-3">🎈 Дорогая мама!</p>
-        <br />
-        <p class="col-lg-4 col-md-6 mb-3">
-          C днём рождения! Я хочу, чтобы этот день был для тебя самым
-          счастливым. 😋
-        </p>
-        <br />
-        <p class="col-lg-4 col-md-6 mb-3">
-          Ты всегда была рядом со мной, поддерживала и любила. Спасибо за твою
-          заботу и любовь. Ты – самая лучшая мама на свете. Ты всегда знаешь,
-          что мне нужно, и всегда готова помочь. Надеюсь, что твой день рождения
-          будет наполнен любовью, счастьем и радостью. Я желаю тебе всего самого
-          наилучшего. Пусть все твои мечты сбываются, и пусть здоровье и счастье
-          будет всегда с тобой. Я люблю тебя бесконечно! 💖
-        </p>
-        <br />
-        <p class="col-lg-4 col-md-6 mb-3">С днем рождения, мама! 🎊</p>
-        <br />
-        <p class="col-lg-4 col-md-6 mb-3">
-          С наилучшими пожеланиями, Максим! 🥳
-        </p>
+      <div class="block page__block block_one">
+        <div class="block__container">
+          <div class="block__body">
+            <h2 class="block__title">Поздравление 📋</h2>
+            <div class="block__text">
+              🎈 Дорогая мама! <br />
+              C днём рождения! Я хочу, чтобы этот день был для тебя самым
+              счастливым. 😋 <br />
+              Ты всегда была рядом со мной, поддерживала и любила. Спасибо за
+              твою заботу и любовь. Ты – самая лучшая мама на свете. Ты всегда
+              знаешь, что мне нужно, и всегда готова помочь. Надеюсь, что твой
+              день рождения будет наполнен любовью, счастьем и радостью. Я желаю
+              тебе всего самого наилучшего. Пусть все твои мечты сбываются, и
+              пусть здоровье и счастье будет всегда с тобой. Я люблю тебя
+              бесконечно! 💖
+              <br />
+              С днем рождения, мама! 🎊
+              <br />
+              С наилучшими пожеланиями, Максим! 🥳
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- Добовляем стрелки управления -->
       <div
-        class="swiper-button-prev col-lg-4 col-md-6 mb-3"
-        style="color: white"
+        class="swiper-button-prev"
+        style="color: rgb(255, 255, 255); margin-left: 70px; top: 450px"
       ></div>
       <div
-        class="swiper-button-next col-lg-4 col-md-6 mb-3"
-        style="color: white"
+        class="swiper-button-next"
+        style="color: rgb(255, 255, 255); margin-right: 70px; top: 450px"
       ></div>
       <!-- Добовляем пагинацию -->
-      <div
-        class="swiper-pagination col-lg-4 col-md-6 mb-3"
-        style="color: white; font-size: 20px; padding-bottom: 450px"
-      ></div>
-      <!-- добавляем полосу прокрутки (scrollbar) -->
-      <!-- <div class="swiper-scrollbar"></div> -->
-    </div>
 
     <!-- Подключаем Swiper для JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
