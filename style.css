@@ -17,18 +17,6 @@ li {
   list-style: none;
 }
 
-img {
-  transition: transform 0.5s;
-}
-
-img:hover {
-  transform: scale(1.2);
-}
-
-img:active {
-  transform: scale(1);
-}
-
 /* Центрование картинок */
 img.center {
   display: block;
