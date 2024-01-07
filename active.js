@@ -18,9 +18,6 @@ let myImageSlider = new Swiper(".image-slider", {
   // Курсор перетаскивания
   grabCursor: true,
 
-  //   переключение при клике на слайд
-  slideToClickedSlide: true,
-
   // Навигация по хешу
   hashNavigation: {
     // Отслеживать состояние
@@ -40,34 +37,10 @@ let myImageSlider = new Swiper(".image-slider", {
     pageUpDown: true,
   },
 
-  mousewheel: {
-    // Чувствительность колеса мыши
-    sensitivity: 1,
-    // Класс объекта на котором будет срабатывать прокрутка мыщью.
-    EventTarget: ".image-slider",
-  },
-
-  // Автовысота
-  autoHeight: true,
-
   // Количество слайдов для показа
-  slidesPerView: 3,
+  slidesPerView: 1,
 
-  // Отступ
-  spaceBetween: 30,
-
-  // Свободный режим
-  freeMode: false,
-
-  // // Автопрокрутка
-  // autoplay: {
-  //   // Пауза между прокруткой
-  //   delay: 1500,
-  //   // Закончить на последнем слайде
-  //   stopOnLastSlide: false,
-  //   // Отключить после ручного переключения
-  //   disableOnInteraction: true,
-  // },
+  spaceBetween: 10,
 
   // Скорость
   speed: 800,
@@ -75,39 +48,17 @@ let myImageSlider = new Swiper(".image-slider", {
   // Брейк поинты (адаптив)
   // Ширина экрана
   breakpoints: {
-    320: {
+    430: {
       slidesPerView: 1,
+      spaceBetween: 10,
     },
-    480: {
+    768: {
       slidesPerView: 2,
+      spaceBetween: 30,
     },
-    992: {
+    1024: {
       slidesPerView: 3,
+      spaceBetween: 30,
     },
   },
-});
-
-// Ещё один слайдер
-let myTextSlider = new Swiper(".text-slider", {
-  // Кол-во слайдов для показа
-  slidesPerView: 3,
-  // Отступы между слайдами
-  spaceBetween: 30,
-});
-
-// myImageSlider.controller.control = myTextSlider;
-// myTextSlider.controller.control = myImageSlider;
-
-// Запуск автопрокрутки при наведении
-let sliderBlock = document.querySelector(".image-slider");
-
-// myImageSlider - это переменная которой присвоен слайдер
-
-sliderBlock.addEventListener("mouseenter", function (e) {
-  myImageSlider.params.autoplay.disableOnInteraction = false;
-  myImageSlider.params.autoplay.delay = 500;
-  myImageSlider.autoplay.start();
-});
-sliderBlock.addEventListener("mouseleave", function (e) {
-  myImageSlider.autoplay.stop();
 });
